@@ -168,10 +168,10 @@ void main() {\n\
 gl_start(canvas1,
    function(time) {
       M.identity(m);
-      M.translate(m, [0, 0, -1]);
+      M.translate(m, [0, -.25, -1]);
       M.scale(m, .8);
       // M.rotateY(m, time/4);
-      M.rotateY(m, Math.PI/4);
+      // M.rotateY(m, Math.PI/4);
       // M.rotateZ(m, time/4);
 
       // M.save(m);
@@ -305,7 +305,7 @@ gl_start(canvas1,
          M.translate(m, [0, 1.2, -6.3]);
          M.rotateX(m, Math.PI/4);
          M.rotateZ(m, Math.PI/2);
-         M.rotateY(m, -Math.PI + Math.PI/8);
+         M.rotateY(m, -Math.PI + Math.PI/4);
          head.setMatrix(m);
       M.restore(m);
    }
