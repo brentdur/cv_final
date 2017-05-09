@@ -81,6 +81,7 @@ void main() {\n\
    var plain = new Material(vs, fs2);
    plain.setTexture('imgs/plain.png');
 
+
    // obj1 = new SceneObject();
    // obj1.setVertices(SHAPE.cylinder(10));
    // obj1.setMaterial(material1);
@@ -170,23 +171,7 @@ gl_start(canvas1,
       M.identity(m);
       M.translate(m, [0, -.25, -1]);
       M.scale(m, .8);
-      // M.rotateY(m, time/4);
       M.rotateY(m, Math.PI/2);
-      // M.rotateZ(m, time/4);
-
-      // M.save(m);
-      //    M.scale(m, .2);
-      //    M.rotateX(m, 5);
-      //    M.rotateZ(m, 1);
-      //    obj1.setMatrix(m);
-      // M.restore(m);
-
-      // M.save(m);
-      //    M.rotateX(m, 5);
-      //    M.rotateZ(m, 1);
-      //    M.scale(m, .1, .1, .4);
-      //    obj2.setMatrix(m);
-      // M.restore(m);
 
       M.save(m);
          M.rotateX(m, Math.PI/2);
